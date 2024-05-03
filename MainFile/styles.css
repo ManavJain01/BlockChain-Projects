@@ -12,3 +12,42 @@ header{
   justify-content: center;
   align-items: center;
 }
+
+
+footer{
+  background-color: black;
+  color: bisque;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h1, footer h3, footer h4{
+  font-size: x-large;
+}
+
+footer a{
+  text-decoration: none;
+  color: bisque;
+}
+
+footer a:hover{
+  color: darkgoldenrod;
+  text-decoration: overline underline;
+}
+
+#intro, #projects, #social{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer div section{
+  display: flex;
+  gap: 10px;
+}
+
+footer img{
+  height: 30px;
+}
