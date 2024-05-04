@@ -2,21 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: bisque;
 }
 
 header{
   background-color: black;
-  color: bisque;
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+main{
+  background-color: black;
+  min-height: 60vh;
+}
+
+#my-projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 footer{
   background-color: black;
-  color: bisque;
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -29,7 +38,6 @@ footer h1, footer h3, footer h4{
 
 footer a{
   text-decoration: none;
-  color: bisque;
 }
 
 footer a:hover{
