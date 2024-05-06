@@ -5,12 +5,17 @@
   color: bisque;
 }
 
+body{
+  background-color: black;
+}
+
 header{
   background-color: black;
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 main{
@@ -19,13 +24,39 @@ main{
 }
 
 #my-projects{
+  padding: 2rem 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: left;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.div1:hover{
+  transform:scale(120%);
+}
+
+.div1:hover .heading2{
+  display: none;
+}
+
+.div1{
+  background-color: rgb(50, 49, 49);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.heading2{
+  margin-bottom: 10px;
 }
 
 .images{
   height: 10rem;
+  border-radius: 5px;
 }
 
 footer{
@@ -34,6 +65,13 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer div{
+  margin: 0 10px;
+  text-align: center;
 }
 
 footer h1, footer h3, footer h4{
@@ -62,4 +100,17 @@ footer div section{
 
 footer img{
   height: 30px;
+}
+
+@media only screen and (max-width: 780px){
+  #my-projects{
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 610px){
+  #my-projects{
+    padding: 1rem;
+  }
 }
